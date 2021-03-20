@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_utama"
+    tools:context=".activity.AddUpdateKategori">
+
+    <RelativeLayout
+        android:id="@+id/rectangle_4"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginTop="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_item_detail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Kategori"
+                android:textSize="18sp"
+                android:textColor="@color/semi_hitam_text"/>
+            <EditText
+                android:id="@+id/input_nama_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_nama_item"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/ic_bg_form_input"
+                android:gravity="center"
+                android:hint="Nama kategori" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/ic_bg_button_login"
+            android:text="Simpan"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

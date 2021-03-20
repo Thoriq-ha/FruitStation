@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_utama"
+    tools:context=".activity.LetSell">
+
+    <RelativeLayout
+        android:id="@+id/rectangle_4"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_item_detail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Item"
+                android:textSize="18sp"
+                android:textColor="@color/semi_hitam_text"/>
+            <EditText
+                android:id="@+id/input_nama_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_nama_item"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/ic_bg_form_input"
+                android:gravity="center"
+                android:hint="Nama Item" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga"
+                android:textSize="18sp"
+                android:textColor="@color/semi_hitam_text"/>
+            <EditText
+                android:id="@+id/input_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/ic_bg_form_input"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="Harga" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textSize="18sp"
+                android:textColor="@color/semi_hitam_text"/>
+            <EditText
+                android:id="@+id/input_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/ic_bg_form_input"
+                android:gravity="center"
+                android:hint="Deskripsi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gambar"
+                android:textSize="18sp"
+                android:textColor="@color/semi_hitam_text"/>
+            <EditText
+                android:id="@+id/input_gambar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_login_des"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/ic_bg_form_input"
+                android:gravity="center"
+                android:hint="Gambar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori"
+                android:textSize="18sp"
+                android:textColor="@color/semi_hitam_text"/>
+            <EditText
+                android:id="@+id/input_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_login_des"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/ic_bg_form_input"
+                android:gravity="center"
+                android:hint="Kategori" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sell"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/ic_bg_button_login"
+            android:text="Simpan"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

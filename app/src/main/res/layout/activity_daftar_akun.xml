@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.DaftarAkun">
+
+    <RelativeLayout
+        android:id="@+id/view_atas"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:background="@color/orange_utama"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/man"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:src="@drawable/ic_man_daftar_akun" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_atas"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp">
+
+        <TextView
+            android:id="@+id/txt_daftar_akun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Daftar Akun"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/txt_login_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_daftar_akun"
+            android:text="Masukkan Username dan Password"
+            android:textColorHint="@color/soft_txt_login_des" />
+
+
+        <EditText
+            android:id="@+id/input_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_login_des"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_bg_form_input"
+            android:gravity="center"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_username"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_bg_form_input"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_password"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_bg_button_login"
+            android:gravity="center"
+            android:text="Daftar" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

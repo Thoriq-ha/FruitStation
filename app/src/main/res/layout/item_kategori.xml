@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_kategori"
+    android:layout_width="140dp"
+    android:layout_height="150dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/bg_item_category"
+    android:backgroundTint="#C9FFA451">
+
+    <TextView
+        android:id="@+id/txt_nama_kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:text="Nama Kategori"
+        android:textColor="@color/semi_hitam_text"
+        android:textSize="18sp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp">
+
+        <TextView
+            android:id="@+id/txt_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="Edit"/>
+
+        <TextView
+            android:id="@+id/txt_hapus_kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hapus" />
+    </LinearLayout>
+
+
+</RelativeLayout>

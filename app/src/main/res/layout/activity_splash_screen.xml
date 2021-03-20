@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashScreen">
+
+    <ImageView
+        android:id="@+id/logo_splash_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_splash_screen"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makan Buah-buahan yuk"
+        android:textSize="12sp"
+        android:textColor="@color/soft_txt_login_des"
+        android:layout_above="@+id/thor"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:id="@+id/thor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Thor"
+        android:textSize="12sp"
+        android:textColor="@color/soft_txt_login_des"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto"/>
+
+
+</RelativeLayout>
